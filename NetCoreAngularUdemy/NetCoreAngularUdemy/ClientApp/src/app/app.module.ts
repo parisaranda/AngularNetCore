@@ -6,9 +6,9 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { NavMenuComponent } from './nav-menu/nav-menu.component';
-
 import { InicioComponent } from './inicio/inicio.component';
 import { ClienteComponent } from './cliente/cliente.component';
+import { LoginComponent } from './Login/Login.component';
 
 
 @NgModule({
@@ -17,7 +17,7 @@ import { ClienteComponent } from './cliente/cliente.component';
     NavMenuComponent,
   //  HomeComponent,
     ClienteComponent,
-    
+    LoginComponent,
     InicioComponent,
   ],
   imports: [
@@ -28,6 +28,7 @@ import { ClienteComponent } from './cliente/cliente.component';
       { path: '', component: InicioComponent, pathMatch: 'full' },
       { path: 'cliente', component: ClienteComponent },
       { path: 'inicio', component: InicioComponent },
+      { path: 'login', component: LoginComponent },
 
 
     ])
